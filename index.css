@@ -1,0 +1,209 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8e99a0;
+}
+
+.main_container {
+  max-width: 60%;
+  margin: 6% auto;
+  background-color: #e6eff3;
+  padding: 1.5rem;
+  border-radius: 0.35rem;
+  border: 1px solid #ccc;
+  box-shadow: 2px 4px 11px -1px #00000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_container {
+  max-width: 100%;
+}
+
+h1 {
+  color: #333;
+}
+
+.form_field {
+  margin-bottom: 15px;
+}
+
+.name_field {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dob {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dob select {
+  width: 10rem;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.gender_container input {
+  width: 2%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="email"],
+input[type="password"],
+input[name="facebook"],
+input[name="twitter"],
+input[name="instagram"] {
+  width: 35rem;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  border: 2px solid red !important;
+}
+.error-message {
+  color: red;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+#content {
+  margin-top: 20px;
+  width: 100%;
+}
+
+#user_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.user_detail,
+.social_links {
+  flex: 0 1 calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user_detail h4,
+.social_links h4 {
+  margin-bottom: 10px;
+}
+
+.social_links_value {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (width < 870px) {
+  input[type="email"],
+  input[type="password"],
+  input[name="facebook"],
+  input[name="twitter"],
+  input[name="instagram"] {
+    width: 20rem;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .dob select {
+    width: 5rem;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .gender_container input {
+    width: 5%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (width < 506px) {
+  input[type="email"],
+  input[type="password"],
+  input[name="facebook"],
+  input[name="twitter"],
+  input[name="instagram"] {
+    width: 10rem;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .dob select {
+    width: 4rem;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .gender_container input {
+    width: 5%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+}
